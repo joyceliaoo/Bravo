@@ -31,7 +31,7 @@ the recursive abstraction can
     determine the boolean value of the statement
     "it is possible to get from a position with one less choice to the treasure"
 
-note: a "choice" as illustrated in [Piazza@446](https://piazza.com/class/j7oyiev6r7x576?cid=446) is made when the explorer is at a position with multiple options for the next stepping stone 
+note: a "choice" as illustrated in [Piazza@446](https://piazza.com/class/j7oyiev6r7x576?cid=446) is made when the explorer chooses the next stepping stone.
 
 ## base case
 - the explorer is at the treasure
