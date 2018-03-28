@@ -36,13 +36,13 @@ if the explorer is at a position and can choose only one next stepping stone ,
 
 if the explorer is at a position and can choose multiple next stepping stones,
 
-     for each path
-     
-	invoke the recursive abstraction
+   for each path
 
-	if you reach a dead end
+       invoke the recursive abstraction
 
-	   backtrack - go back to the position where a choice was made	
+       if you reach a dead end
+
+       	  backtrack - go back to the position where a choice was made	
 
 a dead end is when there is no available next stepping stone
 
