@@ -73,6 +73,8 @@ if the explorer is at a position and can choose multiple next stepping stones,
 
        for each path
        	   invoke the recursive abstraction
+	   
+invoke the recursive abstraction
 
 ## class(es), with fields and methods
 null
