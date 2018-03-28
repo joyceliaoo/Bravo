@@ -65,10 +65,11 @@ recursive solution:
 	
 
 the explorer can move in 4 directions:
-0 north
-1 east
-2 south
-3 west
+
+	0 north
+	1 east
+	2 south
+	3 west
 
 	for each direction
 	
