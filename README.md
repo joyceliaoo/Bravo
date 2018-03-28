@@ -9,16 +9,17 @@ what is the boolean value of the statement "it is possible to get from the start
 ## recursive abstraction
 
 When I am asked to 
+
 	`determine if it is possible to get 
 	from the _starting position_ 
 	to the _treasure_
 	in a maze with _n_ intersections`
+
 The recursive abstraction can
+
 	`determine the boolean to the statement 
 	for a maze with _n-1_ intersections`
 
-## base case
-No possible new next step exists
 =======
 when I am asked to
 
@@ -33,9 +34,11 @@ the recursive abstraction can
 note: a "choice" as illustrated in [Piazza@446](https://piazza.com/class/j7oyiev6r7x576?cid=446) is made when the explorer is at a position with multiple options for the next stepping stone 
 
 ## base case
-the explorer is at the treasure
+-the explorer is at the treasure
+-No possible new next step exists
 
 ## English or pseudocode description of algorithm
+
 `if no possible next step
 	if treasure discovered
 		return true
@@ -49,6 +52,7 @@ if a path exists
 	advance forward one step
 	execute the recursive abstraction
 	walk back to previous intersection`
+	
 
 recursive solution:
 
