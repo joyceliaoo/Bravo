@@ -55,13 +55,13 @@ note: a "choice" as illustrated in [Piazza@446](https://piazza.com/class/j7oyiev
 
 recursive solution:
 
-if the explorer is at the treasure
+	if the explorer is at the treasure
 
-	return true
+		return true
+	
+	if there is no treasure
 
-if there is no treasure
-
-	return false
+		return false
 	
 
 the explorer can move in 4 directions:
@@ -70,15 +70,15 @@ the explorer can move in 4 directions:
 2 south
 3 west
 
-for each direction
+	for each direction
 	
-	if the explorer needs to make a choice
-		remember this location 
-	if there is an available stepping stone in that direction 
-		move to that space
-	if there is no available stepping stone
-		backtrack to most recent position with a choice
-	invoke the recursive abstraction
+		if the explorer needs to make a choice
+			remember this location 
+		if there is an available stepping stone in that direction 
+			move to that space
+		if there is no available stepping stone
+			backtrack to most recent position with a choice
+		invoke the recursive abstraction
 	
 
 ## class(es), with fields and methods
