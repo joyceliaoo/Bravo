@@ -57,23 +57,29 @@ recursive solution:
 
 if the explorer is at the treasure
 
-	record the solution 
+	return true
+
+if there is no treasure
+
+	return false
 	
-if the explorer is at a dead end (when there is no available next stepping stone)
 
-	backtrack - go back to the position where a choice was made
+the explorer can move in 4 directions:
+0 north
+1 east
+2 south
+3 west
 
-if the explorer is at a position and can choose only one next stepping stone ,
-
-       move to that stepping stone
-       turn if necessary
-
-if the explorer is at a position and can choose multiple next stepping stones,
-
-       for each path
-       	   invoke the recursive abstraction
-	   
-invoke the recursive abstraction
+for each direction
+	
+	if the explorer needs to make a choice
+		remember this location 
+	if there is an available stepping stone in that direction 
+		move to that space
+	if there is no available stepping stone
+		backtrack to most recent position with a choice
+	invoke the recursive abstraction
+	
 
 ## class(es), with fields and methods
 null
