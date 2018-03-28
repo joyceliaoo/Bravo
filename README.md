@@ -30,19 +30,19 @@ recursive solution:
 
 if the explorer is at a position and can choose only one next stepping stone ,
 
-     follow the path
-     
-     turn if necessary
+   follow the path
+
+   turn if necessary
 
 if the explorer is at a position and can choose multiple next stepping stones,
 
      for each path
      
-          invoke the recursive abstraction
-	  
-	  if you reach a dead end
-	  
-               backtrack - go back to the position where a choice was made	
+	invoke the recursive abstraction
+
+	if you reach a dead end
+
+	   backtrack - go back to the position where a choice was made	
 
 a dead end is when there is no available next stepping stone
 
