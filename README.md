@@ -8,6 +8,7 @@ what is the boolean value of the statement "it is possible to get from the start
 
 ## recursive abstraction
 
+<!--
 When I am asked to 
 
 	determine if it is possible to get 
@@ -19,8 +20,8 @@ The recursive abstraction can
 
 	determine the boolean to the statement 
 	for a maze with _n-1_ intersections
+	-->
 
-=======
 when I am asked to
 
      determine the boolean value of the statement
@@ -29,16 +30,14 @@ when I am asked to
 the recursive abstraction can
 
     determine the boolean value of the statement
-    "it is possible to get from a position with one less choice to the treasure"
-
-note: a "choice" as illustrated in [Piazza@446](https://piazza.com/class/j7oyiev6r7x576?cid=446) is made when the explorer chooses the next stepping stone.
-
+    "it is possible to get from a position with one less stepping stone to the treasure"
+    
 ## base case
 - the explorer is at the treasure
 - No possible new next step exists
 
 ## English or pseudocode description of algorithm
-
+<!--
 	if no possible next step
 	if treasure discovered
 		return true
@@ -52,17 +51,18 @@ note: a "choice" as illustrated in [Piazza@446](https://piazza.com/class/j7oyiev
 		advance forward one step
 		execute the recursive abstraction
 		walk back to previous intersection`
+		
+	if there is no treasure
+
+		return false
+		
+		-->
 
 recursive solution:
 
 	if the explorer is at the treasure
 
 		return true
-	
-	if there is no treasure
-
-		return false
-	
 
 the explorer can move in 4 directions:
 
@@ -73,21 +73,17 @@ the explorer can move in 4 directions:
 
 	for each direction
 	
-		if the explorer needs to make a choice
-			remember this location 
+		mark the current stepping stone
 		if there is an available stepping stone in that direction 
 			move to that space
-		if there is no available stepping stone
-			backtrack to most recent position with a choice
-		invoke the recursive abstraction
+			invoke the recursive abstraction
 	
+	return false
 
 ## class(es), with fields and methods
 null
 
 ## version *n* wish list
-<<<<<<< HEAD
-=======
 shortest path
 
 
