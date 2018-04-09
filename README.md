@@ -84,11 +84,30 @@ the explorer can move in 4 directions:
 	return false
 
 ## class(es), with fields and methods
-null
+
+#### Maze Class
+##### methods
+- toString()
+- go()
+- explorerIsOnA()
+
+##### fields
+- TREASURE, WALL, STEPPING_STONE
+- EAST, NORTH, WEST, SOUTH
+- maze, MAX_RANKS, rankCount, explorerPosition
+
+#### Vector Class
+private class in Maze
+##### methods
+- add()
+- equals ()
+
+##### fields
+- rank, file
 
 ## version *n* wish list
-all solutions
-shortest path
+- all solutions
+- shortest path
 
 
 
