@@ -87,6 +87,8 @@ the explorer can move in 4 directions:
 null
 
 ## version *n* wish list
+all solutions
 shortest path
+
 
 
