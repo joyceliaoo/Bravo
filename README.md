@@ -35,7 +35,7 @@ the recursive abstraction can
 ## base case
 - there is no treasure
 - the explorer is at the treasure
-- No possible new next step exists
+- no path to a treasure
 
 ## English or pseudocode description of algorithm
 <!--
