@@ -33,6 +33,7 @@ the recursive abstraction can
     "it is possible to get from a position with one less stepping stone to the treasure"
     
 ## base case
+- there is no treasure
 - the explorer is at the treasure
 - No possible new next step exists
 
@@ -57,6 +58,8 @@ the recursive abstraction can
 		return false
 		
 		-->
+
+use a pair routine to check if there is no treasure
 
 recursive solution:
 
