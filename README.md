@@ -35,7 +35,7 @@ the recursive abstraction can
 ## base case
 - there is no treasure
 - the explorer is at the treasure
-- no path to a treasure
+- the explorer is in a wall
 
 ## English or pseudocode description of algorithm
 <!--
@@ -75,11 +75,12 @@ the explorer can move in 4 directions:
 	3 west
 
 	for each direction
+		
+		drop a wall
+		move 1 space in that direction
+		if the explorer is on a stepping stone 
+			invoke recursive abstraction
 	
-		mark the current stepping stone
-		if there is an available stepping stone in that direction 
-			move to that space
-			invoke the recursive abstraction
 	
 	return false
 
