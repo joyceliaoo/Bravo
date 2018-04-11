@@ -75,10 +75,12 @@ the explorer can move in 4 directions:
 
 	for each direction
 		
+		take a snapshot
 		drop a wall
 		move 1 space in that direction
 		if the explorer is on a stepping stone 
 			invoke recursive abstraction
+		revert to snapshot
 	
 	
 	return false
