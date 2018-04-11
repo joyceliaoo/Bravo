@@ -60,6 +60,12 @@ the recursive abstraction can
 
 <!--use a pair routine to check if there is no treasure-->
 
+use a pair routine to check 
+	
+	if the explorer starts in a wall
+		
+		return false
+		
 recursive solution:
 
 	if the explorer is at the treasure
