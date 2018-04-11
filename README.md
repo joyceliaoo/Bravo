@@ -25,12 +25,12 @@ The recursive abstraction can
 when I am asked to
 
      determine the boolean value of the statement
-     "it is possible to get from the starting position to the treasure"
+     "it is possible to get from the current position to the treasure"
      
 the recursive abstraction can
 
     determine the boolean value of the statement
-    "it is possible to get from a position with one less stepping stone to the treasure"
+    "it is possible to get from a position with an additional step to the treasure"
     
 ## base case
 - the explorer is at the treasure
@@ -60,17 +60,12 @@ the recursive abstraction can
 
 <!--use a pair routine to check if there is no treasure-->
 
-use a pair routine to check 
-	
-	if the explorer starts in a wall
-		
-		return false
-		
+
 recursive solution:
 
 	if the explorer is at the treasure
-
 		return true
+
 
 the explorer can move in 4 directions:
 
@@ -84,11 +79,10 @@ the explorer can move in 4 directions:
 		take a snapshot
 		drop a wall
 		move 1 space in that direction
-		if the explorer is on a stepping stone 
-			invoke recursive abstraction
+		if the explorer is on a stepping stone
+			invoke the recursive abstraction
 		backtrack to snapshot
-	
-	
+
 	return false
 
 ## class(es), with fields and methods
