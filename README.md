@@ -59,7 +59,7 @@ the recursive abstraction can
 		
 		-->
 
-use a pair routine to check if there is no treasure
+<!--use a pair routine to check if there is no treasure-->
 
 recursive solution:
 
