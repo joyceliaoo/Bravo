@@ -65,22 +65,24 @@ recursive solution:
 
 	if the explorer is at the treasure
 		return true
+	
+	if the explorer is in a wall
+		return false
 
+else the explorer can move in 4 directions:
 
-the explorer can move in 4 directions:
-
-	0 north
-	1 east
-	2 south
-	3 west
+0 north
+1 east
+2 south
+3 west
 
 	for each direction
 		
 		take a snapshot
 		drop a wall
 		move 1 space in that direction
-		if the explorer is on a stepping stone
-			invoke the recursive abstraction
+		if (invoke the recursive abstraction)
+			return true
 		backtrack to snapshot
 
 	return false
