@@ -30,7 +30,7 @@ when I am asked to
 the recursive abstraction can
 
     determine the boolean value of the statement
-    "it is possible to get from a position with an additional step to the treasure"
+    "it is possible to get to the treasure from a position exactly one step away from current position"
     
 ## base case
 - the explorer is at the treasure
@@ -71,17 +71,18 @@ recursive solution:
 
 else the explorer can move in 4 directions:
 
-0 north
-1 east
-2 south
-3 west
+	north
+	east
+	south
+	west
 
+	take a snapshot
+	
 	for each direction
 		
-		take a snapshot
 		drop a wall
 		move 1 space in that direction
-		if (invoke the recursive abstraction)
+		if (answer to the recursive abstraction) // there is a way to get to treasure from new position
 			return true
 		backtrack to snapshot
 
