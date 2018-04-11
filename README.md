@@ -33,7 +33,6 @@ the recursive abstraction can
     "it is possible to get from a position with one less stepping stone to the treasure"
     
 ## base case
-- there is no treasure
 - the explorer is at the treasure
 - the explorer is in a wall
 
