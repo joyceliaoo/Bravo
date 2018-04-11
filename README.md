@@ -80,7 +80,7 @@ the explorer can move in 4 directions:
 		move 1 space in that direction
 		if the explorer is on a stepping stone 
 			invoke recursive abstraction
-		revert to snapshot
+		backtrack to snapshot
 	
 	
 	return false
