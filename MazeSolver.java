@@ -15,10 +15,10 @@ public class MazeSolver {
 
 		maze = mazeToBeSolved;
 		displayer.atTopOfWindow("solving maze:" + System.lineSeparator() + maze);
-		solution = SolveMaze();
+		solution = solveMaze();
 	}
 
-	private boolean SolveMaze() {
+	private boolean solveMaze() {
 
 	    int[] directions = {Maze.EAST, Maze.SOUTH, Maze.WEST, Maze.NORTH};
 	 
@@ -35,7 +35,7 @@ public class MazeSolver {
 		    maze.dropA(Maze.WALL);
 		    maze.go(direction); 
 		    displayer.atTopOfWindow(maze.toString());
-		    if (SolveMaze())
+		    if (solveMaze())
 			return true;
 		    maze = snapshot;
 		    displayer.atTopOfWindow(maze.toString());
