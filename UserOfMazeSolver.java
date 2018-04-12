@@ -7,6 +7,9 @@
   o  the height of your shell window
 
   Same as in class UserOfMaze
+
+  test with java UserOfMazeSolver mazes/intersection_treasureNorth.txt 2 1 H
+
  */
 
 public class UserOfMazeSolver {
