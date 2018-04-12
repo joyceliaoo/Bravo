@@ -75,11 +75,10 @@ else the explorer can move in 4 directions:
 	east
 	south
 	west
-
-	take a snapshot
 	
 	for each direction
 		
+		take a snapshot
 		drop a wall
 		move 1 space in that direction
 		if (answer to the recursive abstraction) // there is a way to get to treasure from new position
