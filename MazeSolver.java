@@ -14,7 +14,7 @@ public class MazeSolver {
 		displayer = new Displayer(windowHeight);
 
 		maze = mazeToBeSolved;
-		displayer.atTopOfWindow("solving maze:" + System.lineSeparator() + maze.toString());
+		displayer.atTopOfWindow("solving maze:" + System.lineSeparator() + maze);
 		solution = SolveMaze();
 	}
 
