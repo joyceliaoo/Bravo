@@ -186,18 +186,19 @@ public class Maze {
               because the user-programmer's code is expected to benefit
               from that equivalence.
      */
-    // public int explorerIsOnA() {
-    //     if( explorerPosition == null) return WALL;
-    //     else return maze[ explorerPosition.rank][ explorerPosition.file];
-    // }
-
-    public String explorerIsOnA() {
-      if (explorerPosition  == null) return "wall";
-      int pos = maze[ explorerPosition.rank][ explorerPosition.file];
-      if (pos == 0 ) return "treasure";
-      else if (pos == 1) return "wall";
-      else return "stepping stone";
+    public int explorerIsOnA() {
+        if( explorerPosition == null) return WALL;
+        else return maze[ explorerPosition.rank][ explorerPosition.file];
     }
+
+    // // for easier testing purposes
+    // public String explorerIsOnA() {
+    //   if (explorerPosition  == null) return "wall";
+    //   int pos = maze[ explorerPosition.rank][ explorerPosition.file];
+    //   if (pos == 0 ) return "treasure";
+    //   else if (pos == 1) return "wall";
+    //   else return "stepping stone";
+    // }
 
 
     /**
