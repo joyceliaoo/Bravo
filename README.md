@@ -113,5 +113,6 @@ private class in Maze
 - all solutions
 - shortest path
 
+## Known bugs
 
 
