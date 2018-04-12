@@ -20,9 +20,6 @@ public class UserOfMazeSolver {
                             , Integer.parseInt( commandLine[2])
                             );
 
-        	System.out.println("solving maze: " + System.lineSeparator() 
-        						+ maze);
-
         	MazeSolver mazeSolver = new MazeSolver(maze, Integer.parseInt( commandLine[3]));
         	System.out.println(mazeSolver);
 	}

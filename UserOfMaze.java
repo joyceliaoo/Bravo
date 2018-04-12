@@ -31,7 +31,7 @@ public class UserOfMaze {
         // displayer = new Displayer( Integer.parseInt( commandLine[3]));
         // displayerTest( maze);
 
-        snapshotDemo( maze);
+        // snapshotDemo( maze);
     }
 
 
@@ -163,13 +163,13 @@ public class UserOfMaze {
         snapshot = new Maze(candidate);
         candidate.go(Maze.NORTH);
 
-        // System.out.println(
-        //                     "modified candidate with no explorer"
-        //                   + System.lineSeparator()
-        //                   + candidate + System.lineSeparator()
-        //                   + "unchanged snapshot" + System.lineSeparator()
-        //                   + snapshot + System.lineSeparator()
-        //                   );
+        System.out.println(
+                            "modified candidate with no explorer"
+                          + System.lineSeparator()
+                          + candidate + System.lineSeparator()
+                          + "unchanged snapshot" + System.lineSeparator()
+                          + snapshot + System.lineSeparator()
+                          );
 
         /* Expecting...
               modified candidate with no explorer
@@ -187,7 +187,7 @@ public class UserOfMaze {
             // "Write code to undo the go() by making @candidate refer "
           // + "to an unchanged copy of the maze.");
 
-        candidate = new Maze(snapshot);
+        candidate = snapshot;
 
         System.out.println(
                             "restored candidate, with an explorer"

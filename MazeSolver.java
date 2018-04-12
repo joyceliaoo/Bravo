@@ -12,21 +12,37 @@ public class MazeSolver {
 	public MazeSolver(Maze mazeToBeSolved, int windowHeight) {
 
 		displayer = new Displayer(windowHeight);
+
 		maze = mazeToBeSolved;
+		displayer.atTopOfWindow("solving maze:" + System.lineSeparator() + maze.toString());
 		solution = SolveMaze();
 	}
 
 	private boolean SolveMaze() {
-		if (maze.explorerIsOnA() == Maze.TREASURE)
+
+	    int[] directions = {Maze.EAST, Maze.SOUTH, Maze.WEST, Maze.NORTH};
+	 
+	    if (maze.explorerIsOnA() == Maze.TREASURE)
+		return true;
+	    else if (maze.explorerIsOnA() == Maze.WALL)
+		return false;
+	    else {
+		
+			   
+		for (int direction : directions) {
+
+		    Maze snapshot = new Maze(maze);
+		    maze.dropA(Maze.WALL);
+		    maze.go(direction); 
+		    displayer.atTopOfWindow(maze.toString());
+		    if (SolveMaze())
 			return true;
-		else if (maze.explorerIsOnA() == Maze.WALL)
-			return false;
-		else {
-			// solve maze in a straight line in one direction
-			maze.go(Maze.EAST); 
-			displayer.atTopOfWindow(maze.toString());
-			return SolveMaze();
+		    maze = snapshot;
+		    displayer.atTopOfWindow(maze.toString());
 		}
+
+		return false;
+	    }
 	}
 
 	public String toString() {
