@@ -110,9 +110,9 @@ private class in Maze
 - rank, file
 
 ## version *n* wish list
-- all solutions
+- multiple solutions
 - shortest path
 
-## Known bugs
-
+## known bugs
+displayer may not work correctly
 
