@@ -114,6 +114,6 @@ private class in Maze
 - shortest path
 
 ## known bugs
-- displayer takes a long time for certain mazes, enter may need to be hit many times
+- displayer takes a long time for certain mazes, may need to hit enter many times
 - displayer does not indicate if the explorer is outside the maze
 
