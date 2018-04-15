@@ -109,10 +109,48 @@ private class in Maze
 ##### fields
 - rank, file
 
+#### UserOfMaze Class
+##### methods
+- main()
+- moveTest()
+- droptest()
+- copyConstructTest()
+- displayerTest()
+
+##### fields
+- displayer
+
+#### Displayer Class
+##### methods 
+- atTopOfWindow()
+- lineSeparatorsIn()
+
+##### fields
+- windowHeight
+- console
+
+#### MazeSolver Class
+##### methods
+- solveMaze()
+- toString()
+
+##### fields
+- maze
+- solution
+- displayer
+
+#### UserOfMazeSolver Class
+##### methods
+- main()
+
+##### fields
+- null
+
 ## version *n* wish list
-- all solutions
+- multiple solutions
 - shortest path
 
-## Known bugs
-
+## known bugs
+- displayer takes a long time for certain mazes, may need to hit enter many times
+- displayer does not indicate if the explorer is outside the maze
 
