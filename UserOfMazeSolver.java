@@ -8,7 +8,7 @@
 
   Same as in class UserOfMaze
 
-  test with java UserOfMazeSolver mazes/intersection_treasureNorth.txt 2 1 H
+  test with java UserOfMazeSolver mazes/intersection_treasureNorth.txt 2 1 height
 
  */
 
