@@ -19,27 +19,30 @@ public class MazeSolver {
     }
 
     private boolean solveMaze() {
-		    
+
+	// base cases
 	if (maze.explorerIsOnA() == Maze.TREASURE)
 	    return true;
 	else if (maze.explorerIsOnA() == Maze.WALL)
 	    return false;
+
+	// recursive case
 	else {
 		
 	    Maze snapshot = new Maze(maze);
 	    for (int direction : DIRECTIONS) {
 		    
-		maze.dropA(Maze.WALL);
+		maze.dropA(Maze.WALL); //prevent explorer from going backwards
 		maze.go(direction); 
-		displayer.atTopOfWindow(maze.toString());
+		displayer.atTopOfWindow(maze.toString()); //current location of explorer
 		if (solveMaze())
-		    return true;
+		    return true;  //recursive abstraction
 		maze = new Maze(snapshot);
 		displayer.atTopOfWindow(maze.toString());
 		    
 	    }
 
-	    return false;
+	    return false;  //no path to treasure
 	}
     }
 
