@@ -159,5 +159,6 @@ private class in Maze
 fix design errors including
 - maze = new Maze(snapshot)
 - loop through a private static final int[] DIRECTIONS 
+
 add comments to clarify code 
 
