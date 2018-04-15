@@ -138,6 +138,7 @@ private class in Maze
 - maze
 - solution
 - displayer
+- DIRECTIONS
 
 #### UserOfMazeSolver Class
 ##### methods
@@ -153,4 +154,10 @@ private class in Maze
 ## known bugs
 - displayer takes a long time for certain mazes, may need to hit enter many times
 - displayer does not indicate if the explorer is outside the maze
+
+## v1 
+fix design errors including
+- maze = new Maze(snapshot)
+- loop through a private static final int[] DIRECTIONS 
+add comments to clarify code 
 
