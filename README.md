@@ -109,6 +109,43 @@ private class in Maze
 ##### fields
 - rank, file
 
+#### UserOfMaze Class
+##### methods
+- main()
+- moveTest()
+- droptest()
+- copyConstructTest()
+- displayerTest()
+
+##### fields
+- displayer
+
+#### Displayer Class
+##### methods 
+- atTopOfWindow()
+- lineSeparatorsIn()
+
+##### fields
+- windowHeight
+- console
+
+#### MazeSolver Class
+##### methods
+- solveMaze()
+- toString()
+
+##### fields
+- maze
+- solution
+- displayer
+
+#### UserOfMazeSolver Class
+##### methods
+- main()
+
+##### fields
+- null
+
 ## version *n* wish list
 - multiple solutions
 - shortest path

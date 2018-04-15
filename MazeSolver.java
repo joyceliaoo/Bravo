@@ -28,16 +28,16 @@ public class MazeSolver {
 		return false;
 	    else {
 		
-			   
+			  Maze snapshot = new Maze(maze);
 		for (int direction : directions) {
 
-		    Maze snapshot = new Maze(maze);
+		    
 		    maze.dropA(Maze.WALL);
 		    maze.go(direction); 
 		    displayer.atTopOfWindow(maze.toString());
 		    if (solveMaze())
 			return true;
-		    maze = snapshot;
+		    maze = new Maze(snapshot);
 		    displayer.atTopOfWindow(maze.toString());
 		}
 
